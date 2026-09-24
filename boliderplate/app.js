@@ -14,13 +14,18 @@
 
 
 // --- 1. Generate a random color -------------------------------------
-// Hint: a hex color is "#" followed by 6 characters from 0-9 and A-F.
-// Math.random() gives you a decimal between 0 and 1 — multiply it by
-// 16 and round down (Math.floor) to get a random index into that list
-// of characters.
+// Hint: instead of building a hex code character-by-character, keep an
+// array of a few preset colors and pick one at random.
+//
+// Math.random() gives you a decimal between 0 and 1. Multiply it by
+// the array's length and round down (Math.floor) to get a random,
+// valid index into that array — e.g. for a 5-color array, this gives
+// you 0, 1, 2, 3, or 4.
+
+const colors = ['#FF6B6B', '#4ECDC4', '#FFD93D', '#6A4C93', '#1A936F'];
 
 function getRandomColor() {
-  // TODO: build and return a random hex color string, e.g. "#3fae9c"
+  // TODO: pick a random index into `colors` and return that color
 
 }
 
