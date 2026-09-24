@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+button {
+  font-size: 18px;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #fff;
+}
+
+button:hover {
+  background: #f2f2f2;
+}
