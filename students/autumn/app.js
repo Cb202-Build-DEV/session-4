@@ -57,7 +57,11 @@ const button = document.getElementById('button');
 //   b) pass that color into setBackgroundColor()
 //
 // Pass the function reference (Do NOT add parenthesis '()' here)
-button.addEventListener('click', setBackgroundColor(getRandomColor()));
+function handleClick(){
+    const color = getRandomColor()
+    setBackgroundColor(color)
+}
+button.addEventListener('click', handleClick);
 //
 // Careful: pass the FUNCTION itself, not the result of calling it.
 // Wrong:  myButton.addEventListener('click', handleClick());
